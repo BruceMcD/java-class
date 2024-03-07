@@ -1,4 +1,4 @@
-package com.sg.foundations.basics.practice;
+package com.sg.foundations.basics.factorizer;
 
 import java.util.ArrayList;
 import java.util.Scanner;
