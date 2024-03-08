@@ -5,6 +5,31 @@ import java.util.Scanner;
 
 public class Factorizer2 {
 
+
+    // This is an algorithm I found to find factors, I do not fully understand the maths and why it works
+    public static ArrayList<Integer> getArrayOfFactorsSecond(int userNumber){
+        // Create an ArrayList to store factors
+        ArrayList<Integer> factors = new ArrayList<>();
+        // Iterate through numbers from 1 to the square root of the given number
+        for (int i = 1; i <= Math.sqrt(userNumber); i++) {
+            // Check if i is a factor of the number
+            if (userNumber % i == 0) {
+                // Add i to the list of factors
+                factors.add(i);
+
+                // This part I do not understand
+                if (i != userNumber / i) {
+                    factors.add(userNumber / i);
+                }
+            }
+        }
+        // Time Complexity : O(sqrt(N)) - 0(logn)
+        // Sort the factors in ascending order
+        factors.sort(null); // 0(nlogn)
+        return factors; //Return the ArrayList of factors
+
+    }
+
     //Takes an int, and returns an array containing the factors of the input in.
     public static ArrayList<Integer> getArrayOfFactors(int userNumber){
         // Create an ArrayList to store factors
@@ -28,6 +53,8 @@ public class Factorizer2 {
         }
         return addedFactors == factorArray.get(arrayLength - 1); // The last element of the array is the user number
     }
+
+
     
     public static void main(String[] args) {
 
@@ -39,7 +66,7 @@ public class Factorizer2 {
         // Create an ArrayList to store the factors of the user integer
         ArrayList<Integer> numberFactors;
 
-        numberFactors = getArrayOfFactors(myNumber);
+        numberFactors = getArrayOfFactorsSecond(myNumber);
 
         // Outputting:
         System.out.println("The factors of " + myNumber + " are:");
