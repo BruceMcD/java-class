@@ -1,0 +1,7 @@
+com/sg/foundations/basics/arrays/AASimpleArray.java - Done
+com/sg/foundations/flowcontrol/fors/AASimpleForLoop.java - Done
+com/sg/foundations/flowcontrol/ifs/AASimpleIfStatement.java - Done
+com/sg/foundations/flowcontrol/whiles/AASimpleWhileLoop.java - Done
+com/sg/foundations/random/AASimpleRandom.java - Done
+com/sg/foundations/userinput/AASimpleUserInput.java - Done
+com/sg/foundations/flowcontrol/whiles/AASimpleDoWhile.java - Done
