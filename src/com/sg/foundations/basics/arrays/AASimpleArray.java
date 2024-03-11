@@ -1,7 +1,6 @@
 package com.sg.foundations.basics.arrays;
 
 public class AASimpleArray {
-
     public static void main(String[] args) {
         // Declare and initialize an array of integers
         int[] numbers = {1, 2, 3, 4, 5};
