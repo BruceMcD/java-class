@@ -58,7 +58,6 @@ public class RockPaperScissors {
         return numberOfRounds;
     }
 
-
     public static void mainGameLoop(Scanner scanner){
         int numberOfRounds, wins = 0, draws = 0, losses = 0;
 
